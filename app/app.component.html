@@ -1,29 +1,7 @@
- 
- 
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
- <h3>Countdown to Liftoff (via local variable)</h3>
- 
-  <button (click)="timer.start()">Start</button>
- 
-  <button (click)="timer.stop()">Stop</button>
- 
-  <div class="seconds">{{timer.seconds}}</div>
- 
-  <timer #timer></timer>
+Add new users:
+<add-user></add-user>
+<hr>
+Users:
+<ul>
+  <li *ngFor="let user of users">{{user.name}} </li>
+</ul>

@@ -2,10 +2,20 @@ import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent }  from './app.component';
+import { UserComponent } from './user.component';
 
 @NgModule({
   imports: [ BrowserModule ],
-  declarations: [ AppComponent ],
+  declarations: [ AppComponent, UserComponent ],
   bootstrap: [ AppComponent ]
 })
-export class AppModule { }
+export class AppModule { 
+
+ users:any[] = [
+   {id:1, name:'name 1'},
+   {id:2, name:' '},
+   {id:3, name:'name 2'},
+
+ ];
+
+}

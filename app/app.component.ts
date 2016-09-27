@@ -6,11 +6,17 @@ import { Component } from '@angular/core';
     templateUrl: 'app.component.html'
 })
 export class AppComponent {
-
- names:any[]=[
-     'name 1',
-     '  ',
-     'name 2'
+    yes:number=0;
+    no:number=0;
+    onVote(e:boolean){
+        e?this.yes++:this.no++;
+    }
+ questions:any[]=[
+     'Question 1',
+     'Question 2',
+     'Question 3',
+     'Question 4',
+     'Question 5'
  ];
 
  }
